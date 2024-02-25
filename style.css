@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: linear-gradient(120deg, rgb(3, 3, 158), rgb(87, 1, 87));
+   height: 130vh;
+    width: 100vw;
+    display: flex;
+    align-items:center;
+    /* justify-content: center; */
+    flex-direction: column;
+    overflow: scroll;
+
+}
+/* .main{
+    background: linear-gradient(120deg, rgb(3, 3, 158), rgb(87, 1, 87));
+   max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items:center;
+    /* justify-content: center; */
+    /* flex-direction: column;
+    overflow: scroll; */
+    /* margin-top: 2.5rem; */
+/* } */ 
+
+.container{
+    height: 20vh;
+    width: 50vw;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 1.2rem;
+    /* margin: 100px auto 20px; */
+    padding: 40px 30px 70px;
+    margin-top: 2.5rem;
+    /* margin-bottom: 1.2rem; */
+
+    
+    
+}
+
+.taskBox{
+    height: 10vh;
+    width: 43vw;
+}
+.title{
+    height: 10vh;
+    width: 30vw;
+    display: flex;
+
+}
+
+.src{
+    height: 35px;
+    width: 40px;
+}
+#taskName{
+    /* padding: 0.6rem 6.2rem; */
+    height: 1.9rem;
+    width: 28rem;
+    text-align: left;
+    padding: 0.2rem;
+    border-radius: 9px;
+    margin-bottom: 1.5rem;
+
+}
+.add{
+    padding: 0.6rem 1.9rem;
+    background-color: purple;
+    border-radius: 9px;
+    color: white;
+
+}
+.add:hover{
+    cursor: pointer;
+    background-color: rgb(170, 4, 170);
+    padding: 0.7rem 2rem;
+    transition: all  linear 0.2s;
+    
+}
+
+/* .tasklist{
+    height: 20vh;
+    width: 36vw;
+    display: flex;
+   padding: 1.2rem 1.2rem;
+   font-size: 1.1rem;
+} */
+#listitems{
+    height: 20vh;
+    width: 54vw;
+    /* display: flex; */
+   /* padding: 1.2rem 1.2rem; */
+   font-size: 1.1rem;
+   margin-top: -14px;
+   /* background-color: whitesmoke; */
+}
+
+ul li{
+    list-style-type: none;
+    position: relative;
+    left: -1px;
+    padding: 12px 10.3px 12px 50px;
+    background-color: whitesmoke;
+    width: 50vw;
+    height: 12vh;
+   border-radius: 10px;
+   margin-bottom: -37px;
+   /* background-color: red; */
+
+
+}
+
+ul li:hover{
+    cursor: pointer;
+}
+
+ul li span{
+    position: absolute;
+    right: 70px;
+    top: 5px;
+    width: 12vw;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    font-weight: bolder;
+    /* width: 20rem; */
+    /* margin-left: 10rem; */
+}
+
+ul li span:hover{
+    /* background-color: rgb(221, 217, 217); */
+    cursor: pointer;
+    /* transition: all linear 0.3s; */
+}
+ section{
+    position: relative;
+    left: 27rem;
+    top: -9px;
+    width: 13vw;
+    /* background-color: red;; */
+}
+
+ul li::before{
+    content: '';
+    position: absolute;    
+    background-image: url(oval.png);
+    height: 24px;
+    width: 30px;
+    border-radius: 8%;
+    background-size: 30px;
+    background-position: center;
+    /* background-color: red; */
+    top: 12px;
+    left: 8px;
+
+
+}
+
+ ul li.check{
+    color: black;
+    text-decoration: line-through;
+}
+
+ul li.check::before{
+    background: url(check.png);
+    height: 24px;
+    width: 30px;
+    border-radius: 8%;
+    background-size: 30px;
+    background-position: center;
+
+}

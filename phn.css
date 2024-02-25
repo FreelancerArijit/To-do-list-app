@@ -1,0 +1,35 @@
+
+    
+    #taskName{
+        width: 12rem;
+    }
+
+    .container{
+        height: 28vh;
+    }
+
+    .taskBox{
+        width: 53vw;
+        height: 16vh;
+    }
+
+    #listitems{
+        margin-top: -44px;
+        width: 51vw;
+    }
+
+    .container{
+        height: 20vh;
+    }
+
+    ul li{
+        /* position: relative; */
+        left: -22px;
+    }
+
+    ul li span{
+        right: 20px;
+        width: 14vw;
+    }
+  
+  
